@@ -1,0 +1,23 @@
+@import "helpers/libs";
+@import "helpers/fonts";
+@import "modules/header";
+body{
+  //background-color: red;
+  display: grid;
+  box-sizing: border-box;
+  font-family: 'Russo One';
+
+}
+.wrapper{
+  background-color: yellow;
+}
+.icon{
+  fill:red;
+  
+  width: 120px;
+  height: 120px;
+}
+div{
+  margin-bottom: 100px;
+  background-color: orange;
+}

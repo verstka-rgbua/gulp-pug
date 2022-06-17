@@ -1,0 +1,14 @@
+@mixin font-face($font-name,$patch,$weight:normal,$style:normal){
+  @font-face {
+    font-family: Russo One($font-name);
+    src:
+            url(#{$patch}.woff) format("woff"),
+            url(#{$patch}.woff2) format("woff2"),
+            url(#{$patch}.woff) format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+@include font-face('Russo One', '../fonts/Russo One',400,'normal');
+@include font-face('Russo One', '../fonts/Russo One',300,'normal');
+@include font-face('Open-Sans', '../fonts/Russo One',600,'normal');

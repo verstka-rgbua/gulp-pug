@@ -1,0 +1,10 @@
+mixin icon(name,mod)
+	- mod = mod || ''
+	svg(class="icon icon-" + name + ' ' + mod)
+		use(xlink:href="static/images/sprite/symbol/sprite.svg#" + name)
+		
+mixin list
+	ul
+		li item
+		li item
+		li item
